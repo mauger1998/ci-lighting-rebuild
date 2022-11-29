@@ -529,3 +529,220 @@ nav ul li:hover::before {
 }
 
 
+/************************/
+.contact {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:3rem;
+    color:white;  
+    overflow:hidden;
+    text-align: center;
+    padding-block:8rem;
+}
+fieldset {
+    padding-inline:10rem;
+}
+.contact-titles {
+    z-index:1;
+    padding-left:25rem;
+    text-align:left;
+    align-self:flex-start;
+    
+}
+.contact h3 {
+    font-size:2rem;
+    z-index:1;
+    overflow:hidden;
+}
+.contact p {
+    font-size:1rem;
+    z-index:1;
+    overflow:hidden;
+}
+.contact-titles p {
+    width:82%;
+    line-height:2;
+}
+.svg {
+    opacity:0.5;
+    position:absolute;
+    inset:0;
+    height:100%;
+
+   
+}
+.rectangle {
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.85);
+    height:100%;
+    width:100vw;
+    overflow:hidden;
+
+}
+fieldset {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    color:white;
+    overflow:hidden;
+    
+}
+.first-line {
+    display:flex;
+    gap:0.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+}
+.first-line p {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:1rem;
+}
+.message {
+    display:flex;
+    flex-direction: column;
+}
+.message label {
+    font-size:1rem;
+}
+form button {
+    font-weight:600;
+    font-size:1.25rem;
+    border:none;
+    background-color:white;
+    color:black;
+    margin-top:0.5rem;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:2.5rem;
+}
+
+#message:focus {
+    outline:none;
+    padding:0.25rem;
+}
+form button span {
+    font-size:1.75rem;
+}
+input {
+    padding:0.2rem;
+}
+input:focus {
+    outline:2px solid black;
+}
+form {
+    overflow:hidden;
+}
+form button span {
+    padding-left:1rem;
+}
+#name {
+    background-color:white;
+}
+#email {
+    background-color:white;
+}
+form {
+    z-index:1;
+    border:none;
+    outline:none;
+}
+.hello {
+    height:10%;
+}
+fieldset {
+    border:none;
+}
+legend {
+    padding:0.5rem;
+}
+label {
+    align-self:flex-start;
+}
+input {
+    width:30rem;
+    height:2rem;
+    border:none;
+}
+@media (max-width:865px) {
+    .message {
+        width:66%;
+    }
+    .first-line {
+        display:grid;
+        grid-template-columns:1fr;
+    }
+    input {
+        width:30rem;
+    }
+    form button {
+        width:30.5rem;
+        padding-inline:0;
+    }
+}
+@media (max-width:549px) {
+    .message {
+        width:60%;
+    }
+    input {
+        width:27.5rem;
+    }
+    form button {
+        width:27.5rem;
+    }
+}
+@media (max-width:502px) {
+    .message {
+        width:50%;
+    }
+    input,
+    form button {
+        width:23rem;
+    }
+    .contact p {
+        font-size:0.85rem;
+        background-color:inherit;
+    }
+    .contact h3 {
+        font-size:1.25rem;
+    }
+    .contact {
+        height:140vh;
+    }
+    /* .svg {
+        height:100vh;
+    } */
+}
+@media (max-width:446px) {
+    
+    .message {
+        width:42.5%;
+    }
+    input,
+    form button {
+        width:19.5rem;
+    }
+    form button {
+        width:42.5%;
+    }
+    
+}
+@media (max-width:360px) {
+    .hello {
+        width:150%;
+    }
+}
+/******************/
+
+
