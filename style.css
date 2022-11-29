@@ -219,7 +219,6 @@ nav a {
 }
 /*****************************/
 .title-container button:nth-child(2) {
-    background-color:rgba(26, 26, 26, 1);
     color:white;
 }
 .title-container button:nth-child(2):hover {
