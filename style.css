@@ -11,7 +11,6 @@
     scroll-behavior: smooth;
 }
 header {
-    background-color:#0d0d0d;
     color:white;
     position:fixed;
     width:100vw;
@@ -50,6 +49,7 @@ nav {
 }
 header {
     z-index:2;
+    background-color:#060606;
 }
 .logo-section img {
     width:12rem;
@@ -171,6 +171,9 @@ nav a {
 }
 .title-container button:nth-child(1) {
     font-weight:700;
+}
+.title-container button:nth-child(2) {
+    background-color:black;
 }
 
 /**** Media Queries for hero
