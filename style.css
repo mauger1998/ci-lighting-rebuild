@@ -246,7 +246,7 @@ nav ul li:hover,
 nav button {
     cursor:pointer;
 }
-nav ul li::before {
+nav ul li:nth-child(1)::before {
     content:"";
     width: 0px;
     height:2px;
@@ -255,9 +255,34 @@ nav ul li::before {
     top:75%;
     transition:0.5s;
 }
-nav ul li:hover::before {
+nav ul li:nth-child(1):hover::before {
+    width:50px;
+}
+nav ul li:nth-child(2)::before {
+    content:"";
+    width: 0px;
+    height:2px;
+    background-color:white;
+    position:absolute;
+    top:75%;
+    transition:0.5s;
+}
+nav ul li:nth-child(2):hover::before {
     width:70px;
 }
+nav ul li:nth-child(3)::before {
+    content:"";
+    width: 0px;
+    height:2px;
+    background-color:white;
+    position:absolute;
+    top:75%;
+    transition:0.5s;
+}
+nav ul li:nth-child(3):hover::before {
+    width:50px;
+}
+
 .title-text ~ .title-buttons > button {
     width:max(7rem, 10vw);
     font-size:max(1.25vw, 1rem)

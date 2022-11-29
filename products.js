@@ -95,6 +95,7 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
 
 
   let featuredUrl = `https://1x7me4qh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'featuredProducts'%5D%0A%20`
+  let featuredImgUrl = `https://1x7me4qh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'featuredProducts'%5D%7B%0A%20%20name%2C%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%0A%7D%0A%20`
   
   fetch(featuredUrl)
     .then((res) => res.json())
@@ -111,6 +112,15 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
 
 
     })
+    .then(fetch(featuredImgUrl)
+        .then((res) => res.json())
+        .then(({ result })=> {
+            let featuredImg = document.querySelectorAll(".featuredImg")
+
+            result.forEach((image, index) => {
+                featuredImg[index].src = image.imageUrl
+            })
+        }))
 
    let today = new Date()
     let open = "Open Now"
@@ -124,6 +134,8 @@ if (today.getHours() >= 9 && today.getHours() < 17) {
 } else  {
     display.textContent = closed
 }
+
+
 
 
 

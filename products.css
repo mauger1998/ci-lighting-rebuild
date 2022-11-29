@@ -76,6 +76,47 @@ header {
 .burger {
     display:none;
 }
+nav ul li:nth-child(1)::before {
+    content:"";
+    width: 0px;
+    height:2px;
+    background-color:white;
+    position:absolute;
+    top:75%;
+    transition:0.5s;
+}
+nav ul li:nth-child(1):hover::before {
+    width:50px;
+}
+nav ul li:nth-child(2)::before {
+    content:"";
+    width: 0px;
+    height:2px;
+    background-color:white;
+    position:absolute;
+    top:75%;
+    transition:0.5s;
+}
+nav ul li:nth-child(2):hover::before {
+    width:70px;
+}
+nav ul li:nth-child(3)::before {
+    content:"";
+    width: 0px;
+    height:2px;
+    background-color:white;
+    position:absolute;
+    top:75%;
+    transition:0.5s;
+}
+nav ul li:nth-child(3):hover::before {
+    width:50px;
+}
+
+.title-text ~ .title-buttons > button {
+    width:max(7rem, 10vw);
+    font-size:max(1.25vw, 1rem)
+}
 
 /** Nav Media Queries
 ********************/
@@ -273,6 +314,11 @@ nav ul li:hover::before {
     background-image: url(./tinified/hero-redo.png);
 } 
 
+.contactButton a {
+    text-decoration:none;
+    color:black;
+}
+
 /*********/
 
 .hero-section-products h1 {
@@ -423,23 +469,28 @@ nav ul li:hover::before {
 
 }
 .product-first {
-    right:-5% !important;
+    right:0% !important;
+    width:200px;
+    position:absolute;
 }
-.product-first,
-.product-third,
+
 .product-fourth {
-    width:250px;
+    width:125px ;
     position:absolute;
     right:5%;
    
 }
-.product-fourth {
-    width:225px;
-}
+
 .product-second {
-    width:125px;
+    width:250px;
     position:absolute;
-    right:15%;
+    right:1%;
+}
+.product-third {
+    width:300px;
+    right:-0% !important;
+    position:absolute;
+    
 }
 .best-seller-card button {
     padding:0.5rem 1.5rem;
