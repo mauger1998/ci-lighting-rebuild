@@ -519,6 +519,7 @@ nav ul li:hover::before {
     font-size:1rem;
     font-weight:bold;
     transition:0.5s;
+    border:1px solid black;
     
 }
 .gridItem button:hover {
@@ -526,6 +527,7 @@ nav ul li:hover::before {
     color:white;
     transition:0.5s;
     cursor:pointer;
+    border:1px solid black;
 }
 .gridContainer img {
     width:170px !important;
@@ -609,12 +611,16 @@ nav ul li:hover::before {
 }
 .containerButton {
     align-self:center;
-   
-
 }
 .containerOne {
     height:max-content;
     display:flex;
     justify-content: flex-end;
     align-self:center;
+}
+
+/*****************/
+.display {
+    font-weight:bold;
+    font-size:0.85rem;
 }

@@ -44,3 +44,16 @@ contactButton.addEventListener("click", (e) => {
     contactSection.scrollIntoView()
 })
 /***********/
+
+let today = new Date()
+    let open = "Open Now"
+    let closed = "Closed Now"
+    let display = document.querySelector('.display');
+
+    
+
+if (today.getHours() >= 9 && today.getHours() < 17) {
+    display.textContent = open
+} else  {
+    display.textContent = closed
+}

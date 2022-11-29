@@ -21,6 +21,8 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
       if (result.length > 0) {
           grid.removeChild(firstGridItem)
 
+          
+
           result.forEach((product) => {
               let gridContainer = document.createElement("div")
               let gridItem = document.createElement("div")
@@ -90,19 +92,36 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
       }
   }))
   .catch((err) => console.error(err))
+
+
+  let featuredUrl = `https://1x7me4qh.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'featuredProducts'%5D%0A%20`
   
+  fetch(featuredUrl)
+    .then((res) => res.json())
+    .then(({ result })=> {
+        let featuredTitle = document.querySelectorAll(".featuredTitle")
+        let featuredBrand = document.querySelectorAll(".featuredBrand")
+        let featuredTitlesArray = Array.from(featuredTitle)
+        let featuredBrandArray = Array.from(featuredBrand)
+        result.forEach((product, index) => {
+            console.log(result)
+            featuredTitle[index].textContent = product.name
+            featuredBrand[index].textContent = product.brand
+        })
 
 
-   var today = new Date()
-    let open = "We're open right now"
-    let closed = "We are closed"
+    })
+
+   let today = new Date()
+    let open = "Open Now"
+    let closed = "Closed Now"
     let display = document.querySelector('.display');
 
     console.log(closed)
 
 if (today.getHours() >= 9 && today.getHours() < 17) {
     display.textContent = open
-} else if (today.getHours() < 9 || today.getHours() > 17) {
+} else  {
     display.textContent = closed
 }
 

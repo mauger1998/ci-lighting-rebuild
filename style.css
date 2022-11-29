@@ -92,9 +92,12 @@ nav a {
     }
 }
 
-@media (max-width:784px) {
-    .opening-times-section {
+@media (max-width:884px) {
+    .opening-times-section p {
         display:none;
+    }
+    .display {
+        display:block !important;
     }
    
 }
@@ -955,6 +958,11 @@ footer > p {
 }
 .swiper-slide img {
     max-width:70vw;
+}
+/*****************/
+.display {
+    font-weight:bold;
+    font-size:0.85rem;
 }
 
 
