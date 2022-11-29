@@ -940,3 +940,14 @@ footer > p {
 
 
 
+/***********************/
+.swiper {
+    width: 1200px;
+    height: 500px;
+}
+.swiper-slide img {
+    max-width:1000px;
+}
+
+
+
