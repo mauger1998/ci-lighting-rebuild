@@ -39,6 +39,7 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
               
               container.classList.add("containerOne")
               gridContainer.classList.add("gridContainer")
+              gridTitle.classList.add("gridTitle")
               
 
 
@@ -51,8 +52,7 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
 
               
               container.appendChild(gridBrand)
-              
-              container.appendChild(gridDescription)
+              container.appendChild(gridTitle)
               container.appendChild(gridCode)
               grid.appendChild(gridContainer)
               gridContainer.appendChild(gridItem)
