@@ -1150,5 +1150,8 @@ footer > p {
     display:block;
    
 }
+form {
+    width:50% !important
+}
 
 
