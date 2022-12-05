@@ -12,7 +12,7 @@
 }
 header {
     color:white;
-    position:fixed;
+    position:fixed !important;
     width:100vw;
 }
 .top-bar {
@@ -38,7 +38,11 @@ header {
     font-size:0.8rem;
     font-weight:200;
 }
-
+@media (max-width:382px) {
+    .top-bar {
+        padding-inline:1rem;
+    }
+}
 /****************************/
 nav {
     display:flex;
@@ -48,7 +52,7 @@ nav {
     z-index:2;
 }
 header {
-    z-index:2;
+    z-index:10;
     background-color:#060606;
 }
 .logo-section img {
@@ -475,14 +479,12 @@ nav ul li:nth-child(3):hover::before {
         height:max-content;
         padding-bottom:5rem;
     }
-    
-    
+}
+.firstSlide {
+    height:100%;
 }
 @media (max-width:863px) {
-    .gallery {
-        width: min(80vw, 50rem);
-        
-    }
+    
     .third-section h3 {
         font-size:1.75rem;
     }
@@ -551,6 +553,36 @@ nav ul li:nth-child(3):hover::before {
 }
 .fourth + h4 {
     padding-inline:2rem;
+}
+.container button {
+    padding-block:0.5rem;
+    width:100%;
+    font-size:1rem;
+    font-weight:600;
+    border:2px solid black;
+    background-color:transparent;
+    transition:0.5s;
+
+    
+}
+.container button:hover a{
+    cursor:pointer;
+    color:white !important;
+    transition:0.5s;
+    
+}
+.container button:hover {
+    cursor:pointer;
+    background-color:black;
+    transition:0.5s;
+    
+}
+.container button a {
+    text-decoration:none;
+    color:black;
+    transition:0.5s;
+
+
 }
 @media (max-width:1380px) {
     .product-container {
@@ -744,7 +776,7 @@ form {
     align-items: flex-start;
     justify-content: center;
     gap:1rem;
-    align-self:flex-start;
+    align-self:center;
     
     
 }
@@ -782,13 +814,18 @@ fieldset:last-of-type button:hover {
 }
 .contact-titles {
     z-index:1;
-    align-self:flex-start;
+    align-self:center;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact-titles h3 {
     font-size:2rem;
 }
 .contact-titles p {
     font-weight:200;
+    max-width:75%;
 }
 @media(max-width:618px) {
     .contact h3 {
@@ -816,16 +853,16 @@ fieldset:last-of-type button:hover {
 }
 /******************/
 footer {
-    height:60vh;
     background-color:rgba(0, 0, 0, 0.9);
     color:white;
     display:flex;
     padding-block:4rem;
     gap:10rem;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     overflow:hidden;
     position:relative;
+    padding-bottom:5rem
 }
 .leftSide p {
     font-size:1.15rem;
@@ -842,11 +879,12 @@ footer {
 }
 .rightSide {
     display:flex;
-    flex-direction: column;
     gap:3rem;
     font-weight:2;
     justify-content: center;
     align-items: flex-start;
+    align-self:flex-end;
+    margin-bottom:2rem;
 
 }
 .tainer {
@@ -855,6 +893,7 @@ footer {
     justify-content: flex-start;
     text-align:left;
     gap:2rem;
+    
 
     
 }
@@ -916,6 +955,27 @@ footer > p {
     
     
 }
+@media (max-width:349px) {
+    .leftSide p {
+        font-size:1rem !important;
+    }
+    .facebook~ p,
+    .github~ p,
+    .twitter~ p {
+        font-size:0.85rem !important;
+    }
+    .facebook,
+    .github,
+    .twitter {
+        width:30px !important;
+    }
+}
+@media (max-width:301px) {
+    .leftSide p {
+        font-size:0.8rem !important;
+        font-weight:300;
+    }
+}
 
 
 
@@ -956,5 +1016,8 @@ footer > p {
     font-size:0.85rem;
 }
 
+.makeBold {
+    border-bottom:2px solid white;
+}
 
 

@@ -202,7 +202,7 @@ nav ul li:nth-child(3):hover::before {
 }
 .title-container p {
     font-size:1rem;
-    font-size:max(1.15rem, 1.5vw) !important;
+    font-size:max(1.15rem, 1.25vw) !important;
     font-weight:300;
     padding-inline:1rem;
     text-align:center;
@@ -245,11 +245,14 @@ nav ul li:nth-child(3):hover::before {
         display:flex;
         flex-direction:column;
     }
-    .hero-section h1 {
-        font-size:max(2.25rem, 4vw);
+    .title-text h1 {
+        font-size:3rem !important;
+    }
+    .title-text p {
+        font-size:0.9rem !important;
     }
 }
-@media (max-width:600px) {
+@media (max-width:615px) {
     .title-container button {
         word-wrap: nowrap;
         width:max-content;
@@ -264,8 +267,33 @@ nav ul li:nth-child(3):hover::before {
         background-repeat: no-repeat;
         
     }
+    .title-text h1 {
+        font-size:2.5rem !important;
+    }
     
 }
+@media (max-width:511px) {
+    .title-text h1 {
+        font-size:2rem !important;
+    }
+    .title-container button {
+        width:6rem !important;
+        font-size:0.75rem !important;
+        padding-block:0.25rem !important;
+        height:2rem !important;
+        
+
+    }
+}
+@media (max-width:455px) {
+    .title-container h1 {
+        font-size:1.75rem !important;
+    }
+    .title-text p {
+        font-size:0.75rem !important
+    }
+}
+
 .title-container button:nth-child(2) {
     background-color:black;
     color:white;
@@ -324,10 +352,7 @@ nav ul li:hover::before {
 .hero-section-products h1 {
     font-size:4rem;
 }
-.title-text ~ .title-buttons > button {
-    width:max(7rem, 10vw);
-    font-size:max(1.25vw, 1rem)
-}
+
 @media (max-width:800px) {
     .hero-section-products {
         justify-content: center;
@@ -342,7 +367,6 @@ nav ul li:hover::before {
         gap:1rem;
     }
     .title-text ~ .title-buttons button {
-        width:6rem !important;
         font-size:0.8rem;
         padding-inline:0;
         height:2.4rem;
@@ -356,9 +380,7 @@ nav ul li:hover::before {
     .hero-section-products h1 {
         font-size:2rem;
     }
-    .title-text p {
-        font-size:0.85rem !important;
-    }
+    
 }
 .hero-section-products .title-container {
     overflow:visible;
@@ -402,6 +424,14 @@ nav ul li:hover::before {
 .hero-section-products .title-buttons {
     width:max-content;
 }
+@media (max-width:353px) {
+    .title-text h1 {
+        width:100%;
+    }
+    .title-text {
+        width:80% !important;
+    }
+}
 
 /****************************************/
 .product-cards {
@@ -411,8 +441,9 @@ nav ul li:hover::before {
     flex-direction:column;
     align-items: center;
     justify-content:center;
-    max-height:100rem;
+    max-height:150rem;
     gap:0rem;
+    width:100vw !important;
 }
 .best-seller-card-title {
     position:relative;
@@ -444,6 +475,7 @@ nav ul li:hover::before {
     place-items:end;
     overflow:visible;
     margin-bottom:10rem;
+    /* width:55%; */
 }
 .best-seller-card {
     background-color:#F5F7FB;
@@ -534,6 +566,155 @@ nav ul li:hover::before {
 .product-third {
     right:-5%;
 }
+
+
+@media (max-width:1092px) {
+    .best-seller-card {
+        width:25rem;
+        height:15rem;
+    }
+    .best-seller-card img {
+        transform:scale(0.6);
+        
+    }
+    .product-third,
+    .product-first,
+    .product-second {
+        right:-10% !important;
+    }
+    .best-seller-card h3 {
+        font-size:1.25rem;
+    }
+    .best-seller-card button {
+        width:6rem;
+        font-size:1rem;
+        padding-inline:0;
+    }
+}
+@media (max-width:872px) {
+    .best-seller-card {
+        width:22rem;
+        height:13rem;
+    }
+    .best-seller-card img {
+        transform:scale(0.5);
+        
+    }
+    .product-third
+    {
+        right:-20% !important;
+    }
+    .best-seller-card h3 {
+        font-size:1rem;
+        z-index:2;
+    }
+    .best-seller-card button {
+        width:5rem;
+        font-size:0.8rem;
+        padding-inline:0;
+    }
+    .best-seller-title {
+        font-size:1.5rem;
+    }
+    .pencil {
+        width:20rem;
+        top:20%;
+        left:-80% !important;
+    }
+}
+
+@media (max-width:756px) {
+    .product-card-grid {
+        grid-template-columns: 1fr;
+    }
+    .best-seller-card img {
+        transform:scale(1);
+        
+    }
+    .best-seller-card {
+        width:30rem;
+        height:22rem;
+        overflow-x: hidden;
+    }
+   
+    .best-seller-card h3 {
+        font-size:1.5rem;
+    }
+    .product-third,
+    .product-first,
+    .product-second {
+        right:0% !important;
+    }
+    .product-third {
+        right:-10% !important;
+    }
+    .best-seller-card button {
+        width:8rem;
+        font-size:1rem;
+    }
+    .best-seller-card p {
+        font-size:1rem;
+    }
+    .best-seller-title {
+        font-size:2rem;
+    }
+    .pencil {
+        left:-60% !important;
+    }
+}
+@media (max-width:526px) {
+    .product-card-grid {
+        gap:1rem !important;
+    }
+    .product-card-grid {
+        transform:scale(0.8) translateY(-10rem);
+        height:50rem
+    }
+}
+@media (max-width:554px) {
+    .best-seller-title {
+        font-size:1.5rem !important;
+    }
+    .pencil {
+        width:10rem;
+        top:40%;
+        left:-40% !important;
+    }
+}
+@media (max-width:414px) {
+    .product-card-grid {
+        transform:scale(0.7) translateY(-15rem);
+    }
+}
+@media (max-width:358px) {
+    .product-card-grid {
+        transform:scale(0.6) translateY(-20rem) !important;
+    }
+}
+
+@media (max-width:318px) {
+    .product-card-grid {
+        transform: scale(0.5) translateY(-40rem) !important;;
+    }
+    .pencil {
+        width:5rem !important;
+        top:55%;
+        left:-20% !important;
+    }
+    .best-seller-title {
+        font-size:0.8rem;
+    }
+}
+@media (max-width:310px) {
+    .product-card-grid {
+        transform: scale(0.5) translateY(-40rem) !important;;
+
+    }
+}
+
+
+
+
 
 .product-data-grid {
     display:grid;
@@ -677,6 +858,9 @@ nav ul li:hover::before {
     justify-content: flex-end;
     align-self:center;
 }
+
+
+
 
 /*****************/
 .display {

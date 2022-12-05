@@ -57,3 +57,41 @@ if (today.getHours() >= 9 && today.getHours() < 17) {
 } else  {
     display.textContent = closed
 }
+
+/****************************/
+const heroContactButton = document.querySelector(".heroContact")
+const heroSeeMoreButton = document.querySelector(".heroSeeMore")
+const whyUsSection = document.querySelector(".second-section")
+const cardButtons = document.querySelectorAll(".seemore")
+const productSection = document.querySelector(".products")
+const heroSection = document.querySelector(".hero-section")
+
+heroContactButton.addEventListener("click", (e) => {
+  contactSection.scrollIntoView()
+})
+heroSeeMoreButton.addEventListener("click", (e) => {
+  whyUsSection.scrollIntoView()
+})
+
+cardButtons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    productSection.scrollIntoView()
+  })
+})
+/*********************************/
+const navHomeLink = document.querySelector(".navHome a")
+
+const options = { }
+
+const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navHomeLink.classList.add("makeBold")
+      } else {
+        navHomeLink.classList.remove("makeBold")
+      }
+      
+  })
+}, options)
+
+homeObserver.observe(heroSection)
