@@ -133,12 +133,7 @@ nav ul li:nth-child(3):hover::before {
     }
 }
 
-@media (max-width:784px) {
-    .opening-times-section {
-        display:none;
-    }
-   
-}
+
 @media (max-width:333px) {
     .logo-section img {
         width:8rem;
@@ -222,6 +217,11 @@ a {
 
 /**** Media Queries for hero
 ***************************/
+@media (max-width:1176px) {
+    h1 {
+        font-size:3rem !important;
+    }
+}
 @media (max-width:884px) {
     .hero-section,
     .hero-section-products {
@@ -237,12 +237,13 @@ a {
         display:flex;
         flex-direction:column;
     }
-    .hero-section {
-        /* padding:0 !important; */
+    h1 {
+        width:70%;
     }
-    .hero-section h1 {
-        font-size:max(2.25rem, 4vw);
+    .hero-section p {
+        width:80%;
     }
+  
 }
 @media (max-width:600px) {
     .title-container button {
@@ -259,7 +260,16 @@ a {
         background-repeat: no-repeat;
         
     }
+    h1 {
+        font-size:2rem !important;
+    }
     
+}
+@media (max-width:340px) {
+    h1 {
+        font-size:1.75rem !important;
+        width:90%;
+    }
 }
 /*****************************/
 .title-container button:nth-child(2) {
@@ -404,13 +414,111 @@ nav ul li:nth-child(3):hover::before {
     border:2px solid black;
     color:black;
     background-color:white;
+    transition:0.5s;
+
+}
+.left-side button a {
+    transition:0.5s;
+
 }
 .left-side button:hover {
     color:white;
     background-color:black;
     cursor:pointer;
+    transition:0.5s;
     
 }
+.left-side button:hover a {
+    color:white;
+    transition:0.5s;
+
+}
+@media (max-width:1042px) {
+    .left-side h3 {
+        font-size:1.75rem;
+    }
+    .left-side p {
+        font-size:0.8rem;
+    }
+}
+@media (max-width:944px) {
+    .left-side h3 {
+        font-size:1.5rem;
+    }
+    .left-side p {
+        font-size:0.7rem;
+    }
+    .right-side img {
+        width:90%;
+    }
+}
+@media (max-width:846px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;;
+    }
+    .left-side {
+        grid-row:2;
+        grid-column: span 2;
+        text-align:center;
+        place-content:center;
+        display:grid;
+        
+    }
+    .left-side button {
+        place-self:center;
+    }
+    .left-side p {
+        width:90%;
+        place-self:center;
+        font-size:1rem;
+    }
+    .left-side h3 {
+        font-size:2.5rem;
+    }
+    .right-side {
+        grid-column: span 2;
+        place-content:center;
+    }
+    .right-side img {
+        width:80%;
+    }
+}
+@media (max-width:614px) {
+    .left-side h3 {
+        font-size:2rem;
+    }
+    .left-side p {
+        font-size:0.8rem;
+    }
+    
+}
+@media (max-width:508px) {
+    .left-side p {
+        font-size:0.7rem;
+        width:100%;
+    }
+    .right-side img {
+        width:100%;
+    }
+    
+}
+@media (max-width:410px) {
+    .left-side h3 {
+        font-size:1.75rem !important;
+        
+    }
+}
+.bold {
+    font-weight:bold;
+}
+@media (max-width:310px) {
+    .left-side h3 {
+        font-size:1.25rem !important;
+        width:100% !important;
+    }
+}
+
 
 /********************/
 .display {
@@ -420,6 +528,11 @@ nav ul li:nth-child(3):hover::before {
 
 .gridTitle {
     font-weight:300;
+}
+
+.about-grid a {
+    color:black;
+    font-weight:600;
 }
 
 
@@ -529,8 +642,14 @@ nav ul li:nth-child(3):hover::before {
     }
     .display {
         display:block !important;
+        
     }
    
+}
+@media (max-width:390px) {
+    .top-bar {
+        padding-inline:1rem;
+    }
 }
 @media (max-width:333px) {
     .logo-section img {
@@ -578,12 +697,8 @@ nav {
     background-color:rgba(0, 0, 0, 0.8) !important ;
     color:white;
 }
-.contactNew a {
-    color:white;
-}
-.addNow {
-    color:white;
-}
+
+
 /**********************/
 footer {
     background-color:rgba(0, 0, 0, 0.9);
@@ -670,6 +785,9 @@ footer > p {
     .tainer img {
         width:40px;
     }
+    .second-section {
+        margin-inline:1rem;
+    }
 }
 @media (max-width:505px) {
     .rightSide {
@@ -708,4 +826,11 @@ footer > p {
         font-size:0.8rem !important;
         font-weight:300;
     }
+}
+.contactNew a {
+    color:white ;
+}
+
+.addNow {
+    color:black !important;
 }
