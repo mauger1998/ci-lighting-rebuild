@@ -48,7 +48,7 @@ contactButton.addEventListener("click", (e) => {
 let today = new Date()
     let open = "Open Now"
     let closed = "Closed Now"
-    let display = document.querySelector('.display');
+    let display = document.querySelector('.open-closed');
 
     
 
@@ -84,7 +84,7 @@ cardButtons.forEach(button => {
 /**********************************/
 const burger = document.querySelector(".burger")
 const dropDown = document.querySelector(".dropDown")
-const secondContactButton = document.querySelector(".contactNew")
+const secondContactButton = document.querySelector(".dropDownContact")
 const dropDownUl = document.querySelectorAll(".dropDown ul li a")
 console.log(dropDownUl)
 

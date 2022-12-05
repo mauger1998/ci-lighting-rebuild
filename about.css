@@ -18,23 +18,23 @@ header {
     position:fixed;
     width:100vw;
 }
-.top-bar {
+.header_top-bar {
     display:flex;
     justify-content: space-between;
     align-items:center;
     padding-inline: 6rem;
 }
-.top-bar img {
+.header_top-bar img {
     width:2rem;
 }
-.guernsey-flag-section {
+.guernsey-flag-container {
     display:flex;
     align-items:center;
     gap:1rem;
     font-size:0.8rem;
     font-weight:200;
 }
-.opening-times-section {
+.opening-times-container {
     display:flex;
     align-items: center;
     gap:1.5rem;
@@ -521,7 +521,7 @@ nav ul li:nth-child(3):hover::before {
 
 
 /********************/
-.display {
+.open-closed {
     font-weight:bold;
     font-size:0.85rem;
 }
@@ -637,7 +637,7 @@ nav ul li:nth-child(3):hover::before {
 }
 
 @media (max-width:884px) {
-    .opening-times-section p {
+    .opening-times-container p {
         display:none;
     }
     .display {
@@ -647,7 +647,7 @@ nav ul li:nth-child(3):hover::before {
    
 }
 @media (max-width:390px) {
-    .top-bar {
+    .header_top-bar {
         padding-inline:1rem;
     }
 }
@@ -833,4 +833,7 @@ footer > p {
 
 .addNow {
     color:black !important;
+}
+.display {
+    font-weight:bold;
 }
