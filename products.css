@@ -133,11 +133,19 @@ nav ul li:nth-child(3):hover::before {
     }
 }
 
-@media (max-width:784px) {
-    .opening-times-section {
+@media (max-width:840px) {
+    .opening-times-section p {
         display:none;
     }
+    .display {
+        display:block !important;
+    }
    
+}
+@media (max-width:422px) {
+    .top-bar {
+        padding-inline:1rem;
+    }
 }
 @media (max-width:333px) {
     .logo-section img {
@@ -866,4 +874,116 @@ nav ul li:hover::before {
     .titles-for-shop-by-brand h3 {
         font-size:1.25rem !important;
     }
+}
+
+
+
+.dropDown {
+    transform:translateY(-100%);
+    opacity:0;
+    transition:0.5s;
+    display:none;
+    background-color:white ;
+}
+.dropDownAdd {
+    transform:translateY(0);
+    opacity:1;
+    transition: 0.5s;
+   
+}
+.contactNew {
+    
+    padding-block:0.25rem;
+    width:6rem;
+    font-weight:bold;
+    align-self:flex-end;
+    background-color:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+
+
+.dropDownUlAdd {
+    color:white !important ;
+}
+.dropDownButtonAdd {
+    background-color:white;
+    color:black;
+}
+
+
+@media (max-width:884px) {
+    .nav-links {
+        display:none;
+    }
+    
+    nav {
+        padding-inline:2.5rem;
+    }
+    .burger {
+        display:block;
+    }
+    .dropDown {
+        display:block;
+    }
+    .dropDown a {
+        color:black;
+        text-decoration:none;
+    }
+}
+
+@media (max-width:884px) {
+    .opening-times-section p {
+        display:none;
+    }
+    .display {
+        display:block !important;
+    }
+   
+}
+@media (max-width:333px) {
+    .logo-section img {
+        width:8rem;
+    }
+    nav {
+        justify-content:center;
+        align-items:center;
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;
+    }
+    .burger {
+        padding-inline:1.5rem;  
+          
+    }
+}
+
+.dropDownScroll {
+    background-color:rgba(0, 0, 0, 0.8) !important ;
+    color:white;
+}
+.dropDown {
+    position:absolute;
+    background-color:white !important;
+    color:black;
+    padding:2rem;
+    right:5%;
+    width:12rem;
+    text-align:right;
+
+}
+.dropDown ul {
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    gap:3rem;
+    
+
+}
+.burger {
+    cursor:pointer;
+}
+nav {
+    position:relative;
 }

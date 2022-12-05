@@ -79,6 +79,27 @@ cardButtons.forEach(button => {
   })
 })
 /*********************************/
+
+
+/**********************************/
+const burger = document.querySelector(".burger")
+const dropDown = document.querySelector(".dropDown")
+const secondContactButton = document.querySelector(".contactNew")
+const dropDownUl = document.querySelectorAll(".dropDown ul li a")
+console.log(dropDownUl)
+
+burger.addEventListener("click", (e) => {
+  dropDown.classList.toggle("dropDownAdd")
+})
+
+secondContactButton.addEventListener("click", (e) => {
+  contactSection.scrollIntoView()
+})
+
+
+
+
+
 const navHomeLink = document.querySelector(".navHome a")
 
 const options = { }
@@ -87,8 +108,22 @@ const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
   entries.forEach(entry => {
       if (entry.isIntersecting) {
         navHomeLink.classList.add("makeBold")
+        navHomeLink.classList.remove("makeBold")
+        dropDown.classList.remove("dropDownScroll")
+        dropDownUl.forEach(item => {
+          item.classList.remove("dropDownUlAdd")
+        })
+        secondContactButton.classList.remove("dropDownButtonAdd")
+        
+        
       } else {
         navHomeLink.classList.remove("makeBold")
+        dropDown.classList.add("dropDownScroll")
+        dropDownUl.forEach(item => {
+          item.classList.add("dropDownUlAdd")
+        })
+        secondContactButton.classList.add("dropDownButtonAdd")
+        
       }
       
   })
@@ -96,10 +131,3 @@ const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
 
 homeObserver.observe(heroSection)
 
-/**********************************/
-const burger = document.querySelector(".burger")
-const dropDown = document.querySelector(".dropDown")
-
-burger.addEventListener("click", (e) => {
-  dropDown.classList.toggle("dropDownAdd")
-})
