@@ -11,6 +11,10 @@
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    text-decoration:none;
+}
+a {
+    color:black;
 }
 header {
     background-color:black;
