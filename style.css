@@ -405,6 +405,11 @@ nav ul li:nth-child(3):hover::before {
         grid-column: 1 / span 2;
     }
 }
+@media (max-width:432px) {
+    .second-section h2 {
+        font-size:1.5rem;
+    }
+}
 @media (max-width:868px) {
     .cards {
         display:flex;
@@ -414,6 +419,19 @@ nav ul li:nth-child(3):hover::before {
     .second-section {
         text-align:center;
         
+    }
+}
+@media (max-width:356px) {
+    .card {
+        transform:scale(0.8);
+    }
+    .cards {
+        gap:0rem;
+    }
+}
+@media (max-width:296px) {
+    .card {
+        transform:scale(0.7);
     }
 }
 /*************************/
@@ -560,6 +578,14 @@ nav ul li:nth-child(3):hover::before {
         padding-inline:1rem;
     }
 }
+@media (max-width:324px) {
+    .container {
+        transform:scale(0.8)
+    }
+    .products h3 {
+        font-size:1.25rem;
+    }
+}
 
 /*************************/
 .photograph {
@@ -618,37 +644,65 @@ nav ul li:nth-child(3):hover::before {
 .right-delivery p:last-child {
     font-weight:bold;
 }
+
+@media (max-width:892px) {
+    .store img {
+        width:100%;
+    }
+}
+@media (max-width:726px) {
+    .store p {
+        font-size:1rem;
+    }
+    .store h3 {
+        font-size:1.25rem;
+    }
+}
+@media (max-width:562px) {
+    .store img {
+        width:25rem;
+    }
+}
+@media (max-width:496px) {
+    .store .address-delivery {
+        flex-direction: column;
+    }
+    .store h3 {
+        font-size:1.25rem;
+    }
+    .store p {
+        font-size:1rem;
+    }
+}
 @media (max-width:929px) {
     .store img {
         align-self: center;
     }
     
 }
-@media (max-width:699px) {
-    .store {
-        font-size:1.25rem;
-        
-    }
-    .address-delivery h3 {
-        font-size:1.15rem;
-    }
-    .address-delivery p {
-        font-size:1rem;
-        width:10rem;;
+@media (max-width:418px) {
+    .store img {
+        width:150%;
     }
 }
-@media (max-width:507px) {
+@media (max-width:328px) {
+    .h3 {
+        font-size:1.25rem !important;
+        width:125%;
+    }
+}
+@media (max-width:300px) {
     .store h3 {
-        
-        text-align:center;
+        font-size:1rem !important;
+    }
+    .store p {
+        font-size:0.8rem;
+    }
+    .store img {
+        width:200%;
     }
 }
-@media (max-width: 488px) {
-    .store {
-        font-size:1rem;
-        
-    }
-}
+
 
 
 
@@ -663,6 +717,7 @@ nav ul li:nth-child(3):hover::before {
     color:white;  
     padding-block:8rem;
     padding:6rem;
+    width:100vw;
 }
 
 .svg {
@@ -691,6 +746,7 @@ form {
     gap:1rem;
     align-self:flex-start;
     
+    
 }
 fieldset {
     display:flex;
@@ -716,6 +772,9 @@ fieldset:last-of-type button {
 
     
 }
+textarea {
+    width:100%;
+}
 fieldset:last-of-type button:hover {
     background-color:rgb(207, 204, 204);
     transition:0.5s;
@@ -730,6 +789,30 @@ fieldset:last-of-type button:hover {
 }
 .contact-titles p {
     font-weight:200;
+}
+@media(max-width:618px) {
+    .contact h3 {
+        font-size:1.5rem;
+    }
+    .contact p {
+        font-size:0.9rem;
+    }
+   
+}
+@media (max-width:481px) {
+    .contact h3 {
+        font-size:1.25rem;
+
+    }
+    .contact p {
+        font-size:0.75rem;
+        font-weight:300;
+    }
+}
+@media (max-width:521px) {
+   .contact {
+    padding-inline:1rem;
+   }
 }
 /******************/
 footer {
@@ -837,16 +920,35 @@ footer > p {
 
 
 /***********************/
+.third-section {
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
 .swiper {
-    width: 80vw;
+    width: max(80vw);
     max-height: 800px;
     display:flex;
     justify-content: center;
     align-items: center;
+    align-self:center;
 }
 .swiper-slide img {
-    max-width:65vw;
+    max-width:85vw;
     
+}
+@media (max-width:826px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        
+        visibility: hidden;
+    }
+}
+@media (max-width:336px) {
+    .third-section h3 {
+        font-size:1rem;
+    }
 }
 /*****************/
 .display {
