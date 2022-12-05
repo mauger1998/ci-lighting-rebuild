@@ -24,6 +24,7 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
           
 
           result.forEach((product) => {
+              let aTag = document.createElement("a")
               let gridContainer = document.createElement("div")
               let gridItem = document.createElement("div")
               let gridTitle = document.createElement("h3")
@@ -48,7 +49,11 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
               gridBrand.textContent = product.brand
               gridDescription.textContent = product.description 
               gridCode.textContent = product.productCode
-              gridButton.textContent = "See More"
+              aTag.textContent = "See More"
+              aTag.setAttribute("href", product.link)
+              aTag.setAttribute("target", "_blank")
+
+              gridButton.appendChild(aTag)
 
               
               container.appendChild(gridBrand)
