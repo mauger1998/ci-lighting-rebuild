@@ -12,6 +12,9 @@
     text-decoration:none;
 }
 a {
+    color:white;
+}
+button {
     color:black;
 }
 header {
