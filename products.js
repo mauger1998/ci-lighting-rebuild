@@ -107,12 +107,14 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
     .then(({ result })=> {
         let featuredTitle = document.querySelectorAll(".featuredTitle")
         let featuredBrand = document.querySelectorAll(".featuredBrand")
+        let aTags = document.querySelectorAll(".aTag")
         let featuredTitlesArray = Array.from(featuredTitle)
         let featuredBrandArray = Array.from(featuredBrand)
         result.forEach((product, index) => {
             console.log(result)
             featuredTitle[index].textContent = product.name
             featuredBrand[index].textContent = product.brand
+            aTags[index].setAttribute("href", product.link)
         })
 
 
