@@ -82,19 +82,7 @@ cardButtons.forEach(button => {
 
 
 /**********************************/
-const burger = document.querySelector(".burger")
-const dropDown = document.querySelector(".dropDown")
-const secondContactButton = document.querySelector(".dropDownContact")
-const dropDownUl = document.querySelectorAll(".dropDown ul li a")
-console.log(dropDownUl)
 
-burger.addEventListener("click", (e) => {
-  dropDown.classList.toggle("dropDownAdd")
-})
-
-secondContactButton.addEventListener("click", (e) => {
-  contactSection.scrollIntoView()
-})
 
 
 
@@ -130,4 +118,20 @@ const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
 }, options)
 
 homeObserver.observe(heroSection)
+
+
+const burger = document.querySelector(".burger")
+const dropDown = document.querySelector(".dropDown")
+const secondContactButton = document.querySelector(".dropDownContact")
+const dropDownUl = document.querySelectorAll(".dropDown ul li a")
+console.log(dropDown)
+
+burger.addEventListener("click", (e) => {
+  dropDown.classList.toggle("dropDownAdd")
+  console.log("h")
+})
+
+secondContactButton.addEventListener("click", (e) => {
+  contactSection.scrollIntoView()
+})
 

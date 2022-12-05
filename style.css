@@ -519,8 +519,10 @@ nav ul li:nth-child(3):hover::before {
         padding-bottom:5rem;
     }
 }
-.firstSlide {
-    height:100%;
+@media (min-width:1440px) {
+    .firstSlide {
+        height:100%;
+    }
 }
 @media (max-width:863px) {
     
@@ -1068,12 +1070,7 @@ footer > p {
     display:none;
     background-color:white ;
 }
-.dropDownAdd {
-    transform:translateY(0);
-    opacity:1;
-    transition: 0.5s;
-   
-}
+
 .dropDownContact {
     
     padding-block:0.25rem;
@@ -1094,6 +1091,13 @@ footer > p {
 .dropDownButtonAdd {
     background-color:white;
     color:black;
+}
+.dropDownAdd {
+    transform:translateY(0) !important;
+    opacity:1 !important;
+    transition: 0.5s !important;
+    display:block;
+   
 }
 
 
