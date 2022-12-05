@@ -411,3 +411,170 @@ nav ul li:nth-child(3):hover::before {
     cursor:pointer;
     
 }
+
+/********************/
+.display {
+    font-weight:bold;
+    font-size:0.85rem;
+}
+
+.gridTitle {
+    font-weight:300;
+}
+
+
+
+@media (max-width:920px) {
+    .product-data-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:672px) {
+    .titles-for-shop-by-brand h3 {
+        font-size:1.75rem !important;
+    }
+    .titles-for-shop-by-brand p {
+        font-size:0.8rem !important;
+    }
+}
+@media (max-width:552px) {
+    .product-data-grid {
+        grid-template-columns: 1fr;
+        
+    }
+    .containerOne h3{
+        font-size:0.85rem !important;
+    }
+    .containerOne p{
+        font-size:0.75rem !important;
+    }
+    .containerButton button {
+        width:6rem;
+        font-size:0.8rem;
+    }
+    .containerOne {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:max-content;
+    }
+}
+@media (max-width:342px) {
+    .titles-for-shop-by-brand h3 {
+        font-size:1.25rem !important;
+    }
+}
+
+
+
+.dropDown {
+    transform:translateY(-100%);
+    opacity:0;
+    transition:0.5s;
+    display:none;
+    background-color:white ;
+}
+.dropDownAdd {
+    transform:translateY(0);
+    opacity:1;
+    transition: 0.5s;
+   
+}
+.contactNew {
+    
+    padding-block:0.25rem;
+    width:6rem;
+    font-weight:bold;
+    align-self:flex-end;
+    background-color:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+
+
+.dropDownUlAdd {
+    color:white !important ;
+}
+.dropDownButtonAdd {
+    background-color:white;
+    color:black;
+}
+
+
+@media (max-width:884px) {
+    .nav-links {
+        display:none;
+    }
+    
+    nav {
+        padding-inline:2.5rem;
+    }
+    .burger {
+        display:block;
+    }
+    .dropDown {
+        display:block;
+    }
+    .dropDown a {
+        color:black;
+        text-decoration:none;
+    }
+}
+
+@media (max-width:884px) {
+    .opening-times-section p {
+        display:none;
+    }
+    .display {
+        display:block !important;
+    }
+   
+}
+@media (max-width:333px) {
+    .logo-section img {
+        width:8rem;
+    }
+    nav {
+        justify-content:center;
+        align-items:center;
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;
+    }
+    .burger {
+        padding-inline:1.5rem;  
+          
+    }
+}
+
+
+.dropDown {
+    position:absolute;
+    background-color:white !important;
+    color:black;
+    padding:2rem;
+    right:5%;
+    width:12rem;
+    text-align:right;
+
+}
+.dropDown ul {
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    gap:3rem;
+    
+
+}
+.burger {
+    cursor:pointer;
+}
+nav {
+    position:relative;
+}
+
+.dropDownScroll {
+    background-color:rgba(0, 0, 0, 0.8) !important ;
+    color:white;
+}

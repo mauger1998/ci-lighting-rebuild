@@ -959,10 +959,7 @@ nav ul li:hover::before {
     }
 }
 
-.dropDownScroll {
-    background-color:rgba(0, 0, 0, 0.8) !important ;
-    color:white;
-}
+
 .dropDown {
     position:absolute;
     background-color:white !important;
@@ -986,4 +983,9 @@ nav ul li:hover::before {
 }
 nav {
     position:relative;
+}
+
+.dropDownScroll {
+    background-color:rgba(0, 0, 0, 0.8) !important ;
+    color:white;
 }
