@@ -144,6 +144,7 @@ const navHomeLink = document.querySelector(".homeLink")
 const dropDown = document.querySelector(".dropDown")
 const heroSection = document.querySelector(".hero-section-products")
 const secondContactButton = document.querySelector(".contactNew")
+const secondContactLink = document.querySelector(".contactNew a")
 const dropDownUl = document.querySelectorAll(".dropDown ul li a")
 
 
@@ -163,6 +164,7 @@ const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
           item.classList.remove("dropDownUlAdd")
         })
         secondContactButton.classList.remove("dropDownButtonAdd")
+        secondContactLink.classList.remove("justadd")
         
         
       } else {
@@ -172,6 +174,8 @@ const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
           item.classList.add("dropDownUlAdd")
         })
         secondContactButton.classList.add("dropDownButtonAdd")
+        secondContactLink.classList.add("justadd")
+
         
       }
       
@@ -182,8 +186,15 @@ homeObserver.observe(heroSection)
 
 
 
+const seeMoreButton = document.querySelector(".seeMore")
+const featuredSection = document.querySelector(".product-cards")
 
+
+seeMoreButton.addEventListener("click", (e) => {
+    featuredSection.scrollIntoView()
+})
  
+
 
 
 
