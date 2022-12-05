@@ -115,6 +115,7 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
             featuredTitle[index].textContent = product.name
             featuredBrand[index].textContent = product.brand
             aTags[index].setAttribute("href", product.link)
+            aTags[index].setAttribute("target", "_blank")
         })
 
 

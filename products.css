@@ -121,8 +121,8 @@ nav ul li:nth-child(3):hover::before {
 }
 
 .title-text ~ .title-buttons > button {
-    width:max(7rem, 10vw);
-    font-size:max(1.25vw, 1rem)
+    width:8rem;
+    font-size:1rem;
 }
 
 /** Nav Media Queries
@@ -205,10 +205,7 @@ nav ul li:nth-child(3):hover::before {
     gap:0rem;
     
 }
-.title-text p {
-    font-size:max(1rem, 1.4vw) ;
-    font-weight:200;
-}
+
 .title-container h1 {
     font-size:4rem;
     font-weight:700;
@@ -217,7 +214,6 @@ nav ul li:nth-child(3):hover::before {
 }
 .title-container p {
     font-size:1rem;
-    font-size:max(1.15rem, 1.25vw) !important;
     font-weight:300;
     padding-inline:1rem;
     text-align:center;
@@ -239,9 +235,19 @@ nav ul li:nth-child(3):hover::before {
     
 }
 
-/* .title-container {
-    padding:0;
+@media (min-width:2200px) {
+    .hero-section-products h1 {
+        font-size:8rem !important;
+    }
+    .hero-section-products p {
+        font-size:2.5rem !important;
+    }
+    .title-buttons button {
+        width:15rem !important;
+        font-size:2rem !important;
+    }
 }
+
 
 
 /**** Media Queries for hero
