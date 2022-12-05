@@ -17,6 +17,7 @@ const dropDown = document.querySelector(".dropDown")
 const heroSection = document.querySelector(".hero-section")
 const secondContactButton = document.querySelector(".contactNew")
 const dropDownUl = document.querySelectorAll(".dropDown ul li a")
+const dropDownLink = document.querySelector(".contactNew a")
 
 
 burger.addEventListener("click", (e) => {
@@ -35,6 +36,7 @@ const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
           item.classList.remove("dropDownUlAdd")
         })
         secondContactButton.classList.remove("dropDownButtonAdd")
+        dropDownLink.classList.remove(".addNow")
         
         
       } else {
@@ -44,6 +46,8 @@ const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
           item.classList.add("dropDownUlAdd")
         })
         secondContactButton.classList.add("dropDownButtonAdd")
+        dropDownLink.classList.add(".addNow")
+
         
       }
       
@@ -51,6 +55,15 @@ const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
 }, options)
 
 homeObserver.observe(heroSection)
+
+
+
+const seeMoreButton = document.querySelector(".seemore")
+const about = document.querySelector(".second-section")
+
+seeMoreButton.addEventListener("click", (e) => {
+  about.scrollIntoView()
+})
 
 
 
