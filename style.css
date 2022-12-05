@@ -81,6 +81,52 @@ nav a {
 .burger {
     display:none;
 }
+.dropDown {
+    position:absolute;
+    background-color:white;
+    color:black;
+    padding:2rem;
+    right:5%;
+    width:12rem;
+    text-align:right;
+
+}
+.dropDown ul {
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    gap:3rem;
+    
+
+}
+.burger {
+    cursor:pointer;
+}
+nav {
+    position:relative;
+}
+.dropDown {
+    transform:translateY(-100%);
+    opacity:0;
+    transition:0.5s;
+    display:none;
+}
+.dropDownAdd {
+    transform:translateY(0);
+    opacity:1;
+    transition: 0.5s;
+}
+.contactNew {
+    
+    padding-block:0.25rem;
+    width:6rem;
+    font-weight:bold;
+    align-self:flex-end;
+    background-color:black;
+    color:white;
+    border:none;
+}
+
 /** Nav Media Queries
 ********************/
 
@@ -88,10 +134,14 @@ nav a {
     .nav-links {
         display:none;
     }
+    
     nav {
         padding-inline:2.5rem;
     }
     .burger {
+        display:block;
+    }
+    .dropDown {
         display:block;
     }
 }

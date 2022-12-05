@@ -95,3 +95,11 @@ const homeObserver = new IntersectionObserver(function(entries, homeObserver) {
 }, options)
 
 homeObserver.observe(heroSection)
+
+/**********************************/
+const burger = document.querySelector(".burger")
+const dropDown = document.querySelector(".dropDown")
+
+burger.addEventListener("click", (e) => {
+  dropDown.classList.toggle("dropDownAdd")
+})
