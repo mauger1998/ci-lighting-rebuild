@@ -17,6 +17,9 @@ a {
 button {
     color:black;
 }
+form {
+    width:50% !important
+}
 
 header {
     color:white;
@@ -1150,8 +1153,6 @@ footer > p {
     display:block;
    
 }
-form {
-    width:50% !important
-}
+
 
 
