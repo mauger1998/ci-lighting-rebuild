@@ -770,12 +770,22 @@ footer {
 
     
 }
-footer > p {
+footer > p:nth-of-type(1) {
     position:absolute;
     bottom:5%;
     left:50%;
     transform: translateX(-50%);
     font-weight:100;
+}
+
+footer > p:nth-of-type(2) {
+    position:absolute;
+    bottom:20%;
+    left:50%;
+    transform: translateX(-50%);
+    font-weight:100;
+    text-align:center;
+    font-size:1rem;
 }
 @media (max-width:630px) {
     footer {
@@ -867,3 +877,4 @@ footer > p {
     font-weight:500;
     cursor:pointer;
 }
+
