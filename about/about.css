@@ -181,7 +181,7 @@ a {
     margin-top:5rem;
 }
 .hero-section {
-    background-image: url(tinified/hager-hero-for-site.png);
+    background-image: url(../tinified/hager-hero-for-site.png);
 }
 .title-container {
     display:flex;
