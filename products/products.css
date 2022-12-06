@@ -360,7 +360,7 @@ nav ul li:hover::before {
     width:70px;
 }
 .hero-section-products {
-    background-image: url(./tinified/hero-redo.png);
+    background-image: url(../tinified/hero-redo.png);
 } 
 
 .contactButton a {
