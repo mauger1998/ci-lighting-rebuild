@@ -4,8 +4,8 @@ fetch(URL)
   .then((res) => res.json())
   .then(({ result })=> {
     const aboutSection = document.querySelector("#about")
-    console.log(result)
     aboutSection.textContent = result[0].about
+    
   })
 
 

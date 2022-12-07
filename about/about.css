@@ -387,8 +387,9 @@ nav ul li:nth-child(3):hover::before {
 }
 .about-grid {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-block:10rem;
+    gap:5rem;
 }
 .left-side {
     display:flex;
@@ -416,8 +417,14 @@ nav ul li:nth-child(3):hover::before {
 }
 .right-side {
     display:flex;
+    /* flex-direction: column; */
     justify-content: flex-end;
     align-items: center;
+    gap:2rem;
+    width:100%;
+}
+.right-side img {
+    width:50% !important;
 }
 .p-container {
     display:flex;
