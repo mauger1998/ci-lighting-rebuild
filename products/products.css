@@ -362,6 +362,11 @@ nav ul li:hover::before {
 .hero-section-products {
     background-image: url(../tinified/hero-redo.png);
 } 
+@media (max-width:500px) {
+    .me {
+        font-size:0.75rem !important;
+    }
+}
 
 .contactButton a {
     text-decoration:none;

@@ -955,6 +955,11 @@ footer {
     position:relative;
     padding-bottom:5rem
 }
+@media (max-width:500px) {
+    .me {
+        font-size:0.75rem !important;
+    }
+}
 .leftSide p {
     font-size:1.15rem;
     font-weight:100;
