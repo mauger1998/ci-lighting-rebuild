@@ -390,6 +390,7 @@ nav ul li:nth-child(3):hover::before {
     grid-template-columns: 1fr;
     padding-block:10rem;
     gap:5rem;
+    
 }
 .left-side {
     display:flex;
