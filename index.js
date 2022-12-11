@@ -40,7 +40,6 @@ const swiper = new Swiper('.swiper', {
 
 /**********************/
 contactButton.addEventListener("click", (e) => {
-    console.log("clicked")
     contactSection.scrollIntoView()
 })
 /***********/
@@ -58,16 +57,13 @@ if (today.getHours() >= 9 && today.getHours() < 17 && today.getDay() !== 0) {
 }
 
 /****************************/
-const heroContactButton = document.querySelector(".heroContact")
 const heroSeeMoreButton = document.querySelector(".heroSeeMore")
 const whyUsSection = document.querySelector(".second-section")
 const cardButtons = document.querySelectorAll(".seemore")
 const productSection = document.querySelector(".products")
 const heroSection = document.querySelector(".hero-section")
 
-heroContactButton.addEventListener("click", (e) => {
-  contactSection.scrollIntoView()
-})
+
 heroSeeMoreButton.addEventListener("click", (e) => {
   whyUsSection.scrollIntoView()
 })
@@ -122,11 +118,11 @@ const burger = document.querySelector(".burger")
 const dropDown = document.querySelector(".dropDown")
 const secondContactButton = document.querySelector(".dropDownContact")
 const dropDownUl = document.querySelectorAll(".dropDown ul li a")
-console.log(dropDown)
+
 
 burger.addEventListener("click", (e) => {
   dropDown.classList.toggle("dropDownAdd")
-  console.log("h")
+  
 })
 
 secondContactButton.addEventListener("click", (e) => {

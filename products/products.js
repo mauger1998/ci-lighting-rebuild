@@ -111,7 +111,7 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
         let featuredTitlesArray = Array.from(featuredTitle)
         let featuredBrandArray = Array.from(featuredBrand)
         result.forEach((product, index) => {
-            console.log(result)
+           
             featuredTitle[index].textContent = product.name
             featuredBrand[index].textContent = product.brand
             aTags[index].setAttribute("href", product.link)
@@ -135,7 +135,7 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
     let closed = "Closed Now"
     let display = document.querySelector('.display');
 
-    console.log(closed)
+
 
 if (today.getHours() >= 9 && today.getHours() < 17 && today.getDay() !== 0) {
     display.textContent = open

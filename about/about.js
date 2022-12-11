@@ -72,7 +72,7 @@ let today = new Date()
     let closed = "Closed Now"
     let display = document.querySelector('.display');
 
-    console.log(closed)
+    
 
 if (today.getHours() >= 9 && today.getHours() < 17 && today.getDay() !== 0) {
     display.textContent = open
