@@ -19,11 +19,23 @@ a {
 button {
     color:black;
 }
+main {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
 header {
     background-color:black;
     color:white;
     position:fixed;
-    width:100vw;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-contain {
+    width:100%;
+    max-width:1440px;
 }
 .header_top-bar {
     display:flex;
@@ -120,10 +132,7 @@ nav ul li:nth-child(3):hover::before {
     width:50px;
 }
 
-.title-text ~ .title-buttons > button {
-    width:8rem;
-    font-size:1rem;
-}
+
 
 /** Nav Media Queries
 ********************/
@@ -175,15 +184,16 @@ nav ul li:nth-child(3):hover::before {
 ***********Products***/
 
 .first-section {
-    width:100vw;
+    width:100%;
     height:max-content;
     display:flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     background-color:#0d0d0d;
+    
 }
 .hero-section-products {
-    width:100vw;
+    width:100%;
     height:60vh;
     background-size:cover;
     display:flex;
@@ -192,6 +202,7 @@ nav ul li:nth-child(3):hover::before {
     color:white;
     margin-top:5rem;
     z-index:0;
+    max-width:1440px;
 }
 .title-container {
     display:flex;
@@ -202,7 +213,7 @@ nav ul li:nth-child(3):hover::before {
     /* padding-left:2rem; */
 }
 .title-text {
-    gap:0rem;
+    gap:1rem;
     
 }
 
@@ -239,10 +250,10 @@ nav ul li:nth-child(3):hover::before {
 
 @media (min-width:2200px) {
     .hero-section-products h1 {
-        font-size:8rem !important;
+        font-size:5rem !important;
     }
     .hero-section-products p {
-        font-size:2.5rem !important;
+        font-size:1.5rem !important;
     }
     .title-buttons button {
         width:15rem !important;
@@ -256,8 +267,6 @@ nav ul li:nth-child(3):hover::before {
 ***************************/
 @media (max-width:884px) {
     .hero-section-products {
-        /* padding-right:0rem; */
-        /* padding-inline:1rem; */
         justify-content:center;
         align-items: center;
     }
@@ -297,23 +306,30 @@ nav ul li:nth-child(3):hover::before {
 }
 @media (max-width:511px) {
     .title-text h1 {
-        font-size:2rem !important;
+        font-size:2.5rem !important;
+        width:90% !important;
     }
     .title-container button {
-        width:6rem !important;
         font-size:0.75rem !important;
         padding-block:0.25rem !important;
-        height:2rem !important;
+        
         
 
     }
 }
 @media (max-width:455px) {
     .title-container h1 {
-        font-size:1.75rem !important;
+        font-size:2.5rem !important;
+       
     }
     .title-text p {
         font-size:0.75rem !important
+    }
+}
+@media (max-width:360px) {
+    .title-container button {
+        font-size:0.75rem;
+        padding-inline:0.5rem;
     }
 }
 
@@ -378,12 +394,7 @@ nav ul li:hover::before {
     .hero-section-products .title-container {
         gap:1rem;
     }
-    .title-text ~ .title-buttons button {
-        font-size:0.8rem;
-        padding-inline:0;
-        height:2.4rem;
-        
-    }
+    
     .title-text ~ .title-buttons {
         gap:0.5rem;
     }
@@ -442,6 +453,12 @@ nav ul li:hover::before {
     }
     .title-text {
         width:80% !important;
+    }
+}
+
+@media (max-width:360px) {
+    .title-buttons button {
+       
     }
 }
 
@@ -687,10 +704,10 @@ nav ul li:hover::before {
     gap:10rem;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 5rem;
-    max-width:100rem;
     justify-content: center;
     align-items:center;
     align-self:center;
+    
     
     
 }
@@ -812,7 +829,6 @@ nav ul li:hover::before {
     height:21rem;
     position:relative;
     align-self:center;
-    width:20vw;
 }
 .containerButton {
     align-self:center;
@@ -1066,13 +1082,7 @@ footer {
     color:black !important;
 }
 /****************/
-.title-buttons button:hover {
-    transition:0.5s;
-}
-.title-buttons button {
-    width:10rem !important;
-    font-size:1rem !important;
-}
+
 .seeMore:hover  {
     transition:0.5s;
     background-color:black;
@@ -1096,3 +1106,31 @@ footer {
     color:white;
     transition:0.5s;
 }
+
+@media (max-width:1000px) {
+    .footer-p {
+        font-size:0.8rem;
+    }
+    .links {
+        font-size:0.8rem;
+    }
+    .links-right {
+        font-size:0.8rem;
+    }
+    .links img {
+        width:20px;
+    }
+}
+@media (max-width:666px) {
+    footer {
+        flex-direction:column;
+        align-items:center !important;
+    }
+    .links {
+        align-self:center;
+    }
+    .links-right {
+        text-align:center !important;
+    }
+}
+

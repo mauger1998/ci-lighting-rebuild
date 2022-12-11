@@ -21,48 +21,49 @@
 <body>
     <main>
         <header>
-            <div class="header_top-bar">
-                <div class="guernsey-flag-container">
-                    <img src="../images/flag.png" alt="Guernsey Flag" class="guernsey-flag">
-                    <p>Guernsey</p>
+            <div class="header-contain">
+                <div class="header_top-bar">
+                    <div class="guernsey-flag-container">
+                        <img src="../images/flag.png" alt="Guernsey Flag" class="guernsey-flag">
+                        <p>Guernsey</p>
+                    </div>
+                    <div class="opening-times-container">
+                        <p>Mon - Fri</p>
+                        <p>|</p>
+                        <p>7:30am - 17:00pm</p>
+                        <p>|</p>
+                        <p>Sat</p>
+                        <p>|</p>
+                        <p>9:00am - 12:00pm</p>
+                        <p class="display"></p>
+                    </div>
                 </div>
-                <div class="opening-times-container">
-                    <p>Mon - Fri</p>
-                    <p>|</p>
-                    <p>7:30am - 17:00pm</p>
-                    <p>|</p>
-                    <p>Sat</p>
-                    <p>|</p>
-                    <p>9:00am - 12:00pm</p>
-                    <p class="display"></p>
-                </div>
-            </div>
-            <nav>
-                <div class="logo-section">
-                    <a href="../index.html"><img src="../images/logo.png" alt="Our Logo" class="logo"></a>
-                </div>
-                <div class="nav-links">
+                <nav>
+                    <div class="logo-section">
+                        <a href="../index.html"><img src="../images/logo.png" alt="Our Logo" class="logo"></a>
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a class="navHomeLink" href="../index.html">Home</a></li>
+                            <li><a id="prolink" href="../products/index.html">Products</a></li>
+                            <li>About</li>
+                
+                            <a href="../index.html#contact"><button class="contactButton">Contact</button></a>
+                
+                        </ul>
+                
+                    </div>
+                    <img class="burger" src="../images/Group 26.png" alt="Hamburger Menu">
+                </nav>
+                <div class="dropDown">
                     <ul>
-                        <li><a class="navHomeLink" href="../index.html">Home</a></li>
-                        <li><a id="prolink" href="../products/index.html">Products</a></li>
-                        <li>About</li>
-                        
-                        <a href="../index.html#contact"><button class="contactButton">Contact</button></a>
-                        
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../products/index.html">Products</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <button class="contactNew"><a href="../index.html#contact">Contact</a></button></li>
                     </ul>
-                    
                 </div>
-                <img class="burger" src="../images/Group 26.png" alt="Hamburger Menu">
-            </nav>
-            <div class="dropDown">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../products/index.html">Products</a></li>
-                    <li><a href="index.html">About</a></li>
-                    <button class="contactNew"><a href="../index.html#contact">Contact</a></button></li>
-                </ul>
             </div>
-           
         </header>
         <section class="first-section">
             <div class="hero-section">
@@ -79,20 +80,22 @@
             </div>
         </section>
         <section class="second-section">
-            <div class="about-grid">
-                <div class="left-side">
-                    <div class="titles-about">
-                        <h3>About CI-Lighting</h3>
-                        <p class="bold">Did we mention weve been in business 40 years?</p>
+            <div class="second-section-wrapper">
+                <div class="about-grid">
+                    <div class="left-side">
+                        <div class="titles-about">
+                            <h3>About CI-Lighting</h3>
+                            <p class="bold">Did we mention weve been in business 40 years?</p>
+                        </div>
+                        <div class="p-container">
+                            <p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eaque debitis nostrum explicabo exercitationem corporis delectus quasi, alias facere ea, illum similique vel odit blanditiis enim! Voluptates doloribus ipsam ex! Rem ducimus tempora ab, quia provident nesciunt reprehenderit quibusdam impedit quod pariatur autem mollitia quae. Veniam eaque in, consequatur explicabo aspernatur culpa illo tempore, recusandae aperiam commodi sed expedita totam.</p>
+                        </div>
+                        <a href="../products/index.html"><button> See Products</button></a>
                     </div>
-                    <div class="p-container">
-                        <p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eaque debitis nostrum explicabo exercitationem corporis delectus quasi, alias facere ea, illum similique vel odit blanditiis enim! Voluptates doloribus ipsam ex! Rem ducimus tempora ab, quia provident nesciunt reprehenderit quibusdam impedit quod pariatur autem mollitia quae. Veniam eaque in, consequatur explicabo aspernatur culpa illo tempore, recusandae aperiam commodi sed expedita totam.</p>
+                    <div class="right-side">
+                        <img src="../images/keith 1.jpg" alt="Our showroom and staff">
+                        <img src="../images/simon 1.jpg" alt="">
                     </div>
-                    <a href="../products/index.html"><button> See Products</button></a>
-                </div>
-                <div class="right-side">
-                    <img src="../images/keith 1.jpg" alt="Our showroom and staff">
-                    <img src="../images/simon 1.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -102,15 +105,15 @@
             <div class="links">
                 
                     <div class="fb tainer">
-                        <a href="https://www.facebook.com/cilighting.cilighting"><img class="facebook" src="images/fb.png" alt="Facebook Logo"></a>
-                        <a href="https://www.facebook.com/cilighting.cilighting"><p>CI-Lighting</p></a>
+                        <a  href="https://www.facebook.com/cilighting.cilighting" target="_blank"><img class="facebook" src="../images/fb.png" alt="Facebook Logo"></a>
+                        <a href="https://www.facebook.com/cilighting.cilighting" target="_blank"><p>CI-Lighting</p></a>
                     </div>
                     <div class="phone tainer">
-                        <img class="iphone" src="images/phone.png" alt="Phone Icon">
+                        <img class="iphone" src="../images/phone.png" alt="Phone Icon">
                         <p>01481 728911</p>
                     </div>
                     <div class="email tainer">
-                        <a href="mailto:cilighting@cwgsy.net"><img class="mail" src="images/email.png" alt="Email Icon"></a>
+                        <a href="mailto:cilighting@cwgsy.net"><img class="mail" src="../images/email.png" alt="Email Icon"></a>
                         <a href="mailto:cilighting@cwgsy.net"><p>cilighting@cwgsy.net</p></a>
                     </div>
                
