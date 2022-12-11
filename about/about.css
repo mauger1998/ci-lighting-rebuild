@@ -217,8 +217,26 @@ a {
 .title-container button:nth-child(1) {
     font-weight:700;
 }
-.title-container button:nth-child(2) {
+.title-container a button {
     background-color:#1c1c1c;
+    color:white;
+}
+.title-container button:nth-child(1):hover {
+    background-color:transparent;
+    color:white;
+}
+.title-container button:nth-child(2):hover {
+    background-color:white;
+    
+}
+.title-container a:hover button {
+    color:black !important;
+    
+}
+.title-container a:hover button {
+    color:black !important;
+    background-color:white !important;
+    
 }
 
 
