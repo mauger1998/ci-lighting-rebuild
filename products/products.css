@@ -235,6 +235,8 @@ nav ul li:nth-child(3):hover::before {
     
 }
 
+
+
 @media (min-width:2200px) {
     .hero-section-products h1 {
         font-size:8rem !important;
@@ -315,14 +317,8 @@ nav ul li:nth-child(3):hover::before {
     }
 }
 
-.title-container button:nth-child(2) {
-    background-color:black;
-    color:white;
-}
-.title-container button:nth-child(2):hover {
-    background-color:white;
-    color:black;
-}
+  
+
 
     
 nav a {
@@ -330,14 +326,7 @@ nav a {
     text-decoration:none;
 }
 
-.title-container button:hover,
-nav button:hover {
-    transition:0.5s;
-    cursor:pointer;
-    background-color:black;
-    color:white;
-    
-}
+
 .title-buttons {
     display:flex;
     gap:1.5rem;
@@ -368,10 +357,7 @@ nav ul li:hover::before {
     }
 }
 
-.contactButton a {
-    text-decoration:none;
-    color:black;
-}
+
 
 /*********/
 
@@ -445,7 +431,7 @@ nav ul li:hover::before {
 }
 .hero-section-products h1 {
     width:max-content;
-    /* font-size:5rem; */
+    
 }
 .hero-section-products .title-buttons {
     width:max-content;
@@ -1069,3 +1055,44 @@ footer {
 }
 
 /***********************/
+.product-card-grid a {
+    color:black;
+}
+.product-card-grid button:hover a,
+.shop-by-brand button:hover a {
+    color:white !important;
+}
+.shop-by-brand a {
+    color:black !important;
+}
+/****************/
+.title-buttons button:hover {
+    transition:0.5s;
+}
+.title-buttons button {
+    width:10rem !important;
+    font-size:1rem !important;
+}
+.seeMore:hover  {
+    transition:0.5s;
+    background-color:black;
+    cursor:pointer;
+    color:white;
+}
+.contactUs {
+    background-color:transparent !important;
+    color:white !important;
+    transition:0.5s;
+
+}
+.contactUs:hover {
+    background-color:white !important;
+    color:black !important;
+    transition:0.5s;
+    cursor:pointer;
+}
+.contactButton:hover {
+    background-color:transparent;
+    color:white;
+    transition:0.5s;
+}

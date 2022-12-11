@@ -49,11 +49,11 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
               gridBrand.textContent = product.brand
               gridDescription.textContent = product.description 
               gridCode.textContent = product.productCode
-              aTag.textContent = "See More"
+              gridButton.textContent = "See More"
               aTag.setAttribute("href", product.link)
               aTag.setAttribute("target", "_blank")
 
-              gridButton.appendChild(aTag)
+              aTag.appendChild(gridButton)
 
               
               container.appendChild(gridBrand)
@@ -61,7 +61,7 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
               container.appendChild(gridCode)
               grid.appendChild(gridContainer)
               gridContainer.appendChild(gridItem)
-              containerButton.appendChild(gridButton)
+              containerButton.appendChild(aTag)
           
 
               gridItem.classList.add("gridItem")
