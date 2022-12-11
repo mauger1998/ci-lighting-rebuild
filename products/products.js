@@ -137,7 +137,7 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
 
     console.log(closed)
 
-if (today.getHours() >= 9 && today.getHours() < 17) {
+if (today.getHours() >= 9 && today.getHours() < 17 && today.getDay() !== 0) {
     display.textContent = open
 } else  {
     display.textContent = closed
