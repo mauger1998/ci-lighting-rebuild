@@ -248,18 +248,7 @@ nav ul li:nth-child(3):hover::before {
 
 
 
-@media (min-width:2200px) {
-    .hero-section-products h1 {
-        font-size:5rem !important;
-    }
-    .hero-section-products p {
-        font-size:1.5rem !important;
-    }
-    .title-buttons button {
-        width:15rem !important;
-        font-size:2rem !important;
-    }
-}
+
 
 
 
