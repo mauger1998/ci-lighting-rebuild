@@ -186,8 +186,8 @@ nav {
         padding-bottom:0.5rem;
     }
     .burger {
-        padding-inline:1.5rem;  
-          
+          width:25px;
+          margin-left:1.5rem;
     }
 }
 
@@ -1163,7 +1163,7 @@ footer {
     transform:translateY(-100%);
     opacity:0;
     transition:0.5s;
-    display:none;
+    visibility:hidden;
     background-color:white ;
 }
 
@@ -1192,11 +1192,16 @@ footer {
     transform:translateY(0) !important;
     opacity:1 !important;
     transition: 0.5s !important;
-    display:block;
+    z-index:1000;
+    visibility:visible;
    
 }
 .me {
     font-weight:300 !important;
+    
+}
+header {
+    z-index:100000;
     
 }
 
@@ -1217,4 +1222,37 @@ footer {
         padding-inline:1rem;
     }
 }
+@media (max-width:317px) {
+    .why-us-titles p {
+        width:80%;
+        align-self:center;
 
+    }
+    .why-us-titles {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:331px) {
+    .store-titles  {
+        overflow:visible !important;
+        padding:0;
+        margin:0;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .store {
+        padding-inline:4rem !important;
+    }
+}
+@media (max-width:319px) {
+    .logo-footer {
+        width:150px !important;
+    }
+}

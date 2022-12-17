@@ -32,10 +32,7 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
+    
   });
 
 /**********************/
@@ -53,10 +50,7 @@ let today = new Date()
 
     var time = today.getHours() + ":" + today.getMinutes()
 
-    console.log(today.getHours())
-    console.log(today.getMinutes())
-
-    console.log(today.getHours() + today.getMinutes())
+    
 
     
 
@@ -139,7 +133,6 @@ const dropDownUl = document.querySelectorAll(".dropDown ul li a")
 
 burger.addEventListener("click", (e) => {
   dropDown.classList.toggle("dropDownAdd")
-  
 })
 
 secondContactButton.addEventListener("click", (e) => {

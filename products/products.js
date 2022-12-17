@@ -130,20 +130,30 @@ let imgQuery = encodeURIComponent(`*[_type == 'person']{
             })
         }))
 
-   let today = new Date()
-    let open = "Open Now"
-    let closed = "Closed Now"
-    let display = document.querySelector('.display');
-
-   
-
-
-
-if (today.getHours() >= 7 && today.getHours() < 17 && today.getDay() !== 0) {
-    display.textContent = open
-} else  {
-    display.textContent = closed
-}
+        let today = new Date()
+        let open = "Open Now"
+        let closed = "Closed Now"
+        let display = document.querySelector('.open-closed');
+    
+      
+    
+        var time = today.getHours() + ":" + today.getMinutes()
+    
+        
+    
+        
+    
+    if (today.getDay() == 6) {
+      if (today.getHours() >= 9 && today.getHours() <= 12 && today.getDay() != 0) {
+        display.textContent = open
+      } 
+    } else {
+      if (today.getHours() >= 8 && today.getHours() <= 17 && today.getDay() !== 0) {
+        display.textContent = open
+    } else  {
+        display.textContent = closed
+    }
+    }
 
 
 
