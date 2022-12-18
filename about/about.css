@@ -127,191 +127,6 @@ nav ul li:nth-child(3):hover::before {
     width:50px;
 }
 
-
-
-/** Nav Media Queries
-********************/
-
-@media (max-width:884px) {
-    .nav-links {
-        display:none;
-    }
-    nav {
-        padding-inline:2.5rem;
-    }
-    .burger {
-        display:block;
-    }
-}
-
-
-@media (max-width:333px) {
-    .logo-section img {
-        width:8rem;
-    }
-    nav {
-        justify-content:center;
-        align-items:center;
-        padding-top:0.5rem;
-        padding-bottom:0.5rem;
-    }
-    .burger {
-        padding-inline:1.5rem;  
-          
-    }
-}
-
-a {
-    text-decoration:none;
-    color:white;
-}
-/************************/
-.first-section {
-    width:100%;
-    height:max-content;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#0d0d0d;
-}
-.hero-section {
-    width:100%;
-    max-width:1440px;
-    height:60vh;
-    background-size:cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    margin-top:5rem;
-    max-height:35rem;
-}
-.hero-section {
-    background-image: url(../tinified/hager-hero-for-site.png);
-}
-.title-container {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:3rem;
-}
-.title-text p {
-    font-weight:200 !important;
-    text-align:center;
-}
-.title-container h1 {
-    font-size:3rem;
-    font-weight:700;
-    text-align:center;
-}
-.title-container p {
-    font-weight:300;
-    font-size:1.1rem;
-}
-.title-container button {
-    padding-block:0.4rem;
-    font-size:1.15rem;
-    background-color:white;
-    color:black;
-    border:3px solid white;
-    transition:0.5s;
-    font-weight:500;
-    padding-inline:2rem;
-}
-.title-container button:nth-child(1) {
-    font-weight:700;
-}
-.title-container a button {
-    background-color:#1c1c1c;
-    color:white;
-}
-.title-container button:nth-child(1):hover {
-    background-color:transparent;
-    color:white;
-}
-.title-container button:nth-child(2):hover {
-    background-color:white;
-    
-}
-.title-container a:hover button {
-    color:black !important;
-    
-}
-.title-container a:hover button {
-    color:black !important;
-    background-color:white !important;
-    
-}
-
-
-/**** Media Queries for hero
-***************************/
-@media (max-width:1176px) {
-    h1 {
-        font-size:3rem !important;
-    }
-}
-@media (max-width:884px) {
-    .hero-section,
-    .hero-section-products {
-        padding-right:0rem;
-        padding-inline:1rem;
-        justify-content:center;
-        align-items: center;
-    }
-    .title-text,
-    .title-container {
-        justify-content: center;
-        align-items: center;
-        display:flex;
-        flex-direction:column;
-    }
-    h1 {
-        width:70%;
-    }
-    .hero-section p {
-        width:80%;
-    }
-  
-}
-@media (max-width:660px) {
-    .hero-section h1 {
-        font-size:2rem !important;
-        width:100% !important;
-    }
-}
-@media (max-width:600px) {
-   
-    
-    .hero-section,
-    .hero-section-products {
-       
-        background-repeat: no-repeat;
-        
-    }
-    h1 {
-        font-size:2rem !important;
-    }
-    
-}
-@media (max-width:340px) {
-    h1 {
-        font-size:1.75rem !important;
-        width:90%;
-    }
-}
-
-
-/*****************************/
-.title-container button:nth-child(2) {
-    color:white;
-}
-.title-container button:nth-child(2):hover {
-    background-color:white;
-    color:black;
-}
-.title-container button:hover,
 nav button:hover {
     transition:0.5s;
     cursor:pointer;
@@ -319,12 +134,7 @@ nav button:hover {
     color:white;
     
 }
-.title-buttons {
-    display:flex;
-    gap:0.5rem;
-    justify-content: center;
-    align-items: center;
-}
+
 nav ul li:hover,
 nav button {
     cursor:pointer;
@@ -369,11 +179,167 @@ nav ul li:nth-child(3):hover::before {
 
 
 
-@media (max-width:508px) {
-    .title-text p {
-        font-size:0.85rem !important;
+/** Nav Media Queries
+********************/
+
+@media (max-width:884px) {
+    .nav-links {
+        display:none;
+    }
+    nav {
+        padding-inline:2.5rem;
+    }
+    .burger {
+        display:block;
     }
 }
+
+
+@media (max-width:333px) {
+    .logo-section img {
+        width:8rem;
+    }
+    nav {
+        justify-content:center;
+        align-items:center;
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;
+    }
+    .burger {
+        padding-inline:1.5rem;  
+          
+    }
+}
+
+a {
+    text-decoration:none;
+    color:white;
+}
+/************************/
+
+
+
+
+/*****************************/
+
+.hero-section {
+    background-image: url(../tinified/hager-hero-for-site.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.first-section {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section {
+    width:100%;
+    max-width:1440px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 12rem 6rem;
+    padding-top:14rem; 
+    color:white;
+}
+.hero-section h1 {
+    font-size:3rem;
+    text-align:center;
+}
+.hero-section p {
+    font-size:1rem;
+    font-weight:300;
+    text-align:center;
+}
+.hero-section button {
+    padding:0.5rem 2rem;
+    font-size:1rem;
+    font-weight:700;
+    margin-top:1.5rem;
+    cursor:pointer;
+    border:2px solid white;
+    background-color:white;
+    transition:0.5s;
+
+}
+
+
+
+.hero-section button:hover {
+    background-color:transparent;
+    transition:0.5s;
+    color:white;
+}
+
+
+/**** Media Queries for hero
+***************************/
+
+@media (max-width:826px) {
+    .hero-section h1 {
+        font-size:2.5rem;
+    }
+}
+@media (max-width:713px) {
+    .hero-section {
+        padding-inline:4rem;
+    }
+}
+@media (max-width:652px) {
+    .hero-section button {
+        padding-inline:1rem;
+        font-size:0.9rem;
+    }
+    .hero-section h1 {
+        font-size:2rem;
+
+    }
+    .hero-section p {
+        font-size:0.9rem;
+        margin-top:0.5rem;
+    }
+}
+@media (max-width:525px) {
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+    .hero-section {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:408px) {
+    .hero-section {
+        padding-inline:1rem;
+    }
+    .hero-section p {
+        font-size:0.75rem;
+    }
+    .hero-section button {
+        padding:0.4rem 0.8rem;
+        font-size:0.8rem;
+    }
+}
+@media (max-width:382px) {
+    .hero-section h1 {
+        font-size:1.5rem;
+    }
+}
+@media (max-width:328px) {
+    .hero-section h1 {
+        font-size:1.5rem;
+    }
+    .hero-section {
+        padding-inline:0.5rem;
+    }
+}
+
+
+
+
+
+
 /*******************/
 .second-section {
     margin-inline:5rem;

@@ -58,12 +58,8 @@ homeObserver.observe(heroSection)
 
 
 
-const seeMoreButton = document.querySelector(".seemore")
-const about = document.querySelector(".second-section")
 
-seeMoreButton.addEventListener("click", (e) => {
-  about.scrollIntoView()
-})
+
 
 
 

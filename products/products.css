@@ -131,6 +131,31 @@ nav ul li:nth-child(3)::before {
 nav ul li:nth-child(3):hover::before {
     width:50px;
 }
+nav a {
+    color:white;
+    text-decoration:none;
+}
+
+
+
+nav ul:hover,
+nav button {
+    cursor:pointer;
+}
+
+nav ul li::before {
+    content:"";
+    width: 0px;
+    height:2px;
+    background-color:white;
+    position:absolute;
+    top:75%;
+    transition:0.5s;
+}
+nav ul li:hover::before {
+    width:70px;
+}
+
 
 
 
@@ -186,268 +211,156 @@ nav ul li:nth-child(3):hover::before {
 /**********************
 ***********Products***/
 
+
+
+
+
+
+
+
+
+.hero-section {
+    background-image: url(../tinified/hero-redo.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 .first-section {
     width:100%;
-    height:max-content;
     display:flex;
-    justify-content: center;
     align-items: center;
-    background-color:#0d0d0d;
-    
+    justify-content: center;
 }
-.hero-section-products {
+.hero-section {
     width:100%;
-    height:60vh;
-    background-size:cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    margin-top:5rem;
-    max-height:35rem;
-    z-index:0;
     max-width:1440px;
-}
-.title-container {
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction:column;
     align-items: center;
-    gap:1rem;
+    justify-content: center;
+    padding: 12rem 6rem;
+    padding-top:14rem; 
+    color:white;
 }
-
-
-.title-container h1 {
-    font-size:3rem !important;
-    font-weight:700;
+.hero-section h1 {
+    font-size:3rem;
     text-align:center;
 }
-.title-container p {
-    font-size:1rem !important;
-    font-weight:300;
-    padding-inline:1rem;
-    text-align:center;
-
-}
-.title-container button {
-    padding-block:0.4rem;
+.hero-section p {
     font-size:1rem;
-    background-color:white;
-    color:black;
-    border:3px solid white;
-    transition:0.5s;
-    font-weight:500;
-    padding-inline:1.5rem;
+    font-weight:300;
+    text-align:center;
 }
-.title-container button:nth-child(1) {
+.hero-section button {
+    padding:0.5rem 2rem;
+    font-size:1rem;
     font-weight:700;
-    
+    margin-top:1.5rem;
+    cursor:pointer;
+    border:2px solid white;
+    background-color:white;
+    transition:0.5s;
+
 }
 
 
 
-
-
+.hero-section button:hover {
+    background-color:transparent;
+    transition:0.5s;
+    color:white;
+}
 
 
 /**** Media Queries for hero
 ***************************/
-@media (max-width:884px) {
-    .hero-section-products {
-        justify-content:center;
-        align-items: center;
-    }
-    .title-text,
-    .title-container {
-        justify-content: center;
-        align-items: center;
-        display:flex;
-        flex-direction:column;
-    }
-    .title-text h1 {
-        font-size:3rem !important;
-    }
-    .title-text p {
-        font-size:0.9rem !important;
+
+@media (max-width:826px) {
+    .hero-section h1 {
+        font-size:2.5rem;
     }
 }
-@media (max-width:615px) {
-    .title-container button {
-        word-wrap: nowrap;
-        width:max-content;
-        font-size:1rem;
-        text-align:center;
-        padding-inline:1.75rem;
+@media (max-width:713px) {
+    .hero-section {
+        padding-inline:4rem;
     }
-    
-    .hero-section,
-    .hero-section-products {
-       
-        background-repeat: no-repeat;
-        
-    }
-    .title-text h1 {
-        font-size:2.5rem !important;
-    }
-    
 }
-@media (max-width:511px) {
-    .title-text h1 {
-        font-size:2.5rem !important;
-        width:90% !important;
+@media (max-width:652px) {
+    .hero-section button {
+        padding-inline:1rem;
+        font-size:0.9rem;
     }
-    .title-container button {
-        font-size:0.75rem !important;
-        padding-block:0.25rem !important;
-        
-        
+    .hero-section h1 {
+        font-size:2rem;
 
     }
-}
-@media (max-width:455px) {
-    .title-container h1 {
-        font-size:2.5rem !important;
-       
-    }
-    .title-text p {
-        font-size:0.75rem !important
+    .hero-section p {
+        font-size:0.9rem;
+        margin-top:0.5rem;
     }
 }
-@media (max-width:360px) {
-    .title-container button {
+@media (max-width:525px) {
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+    .hero-section {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:408px) {
+    .hero-section {
+        padding-inline:1rem;
+    }
+    .hero-section p {
         font-size:0.75rem;
+    }
+    .hero-section button {
+        padding:0.4rem 0.8rem;
+        font-size:0.8rem;
+    }
+}
+@media (max-width:382px) {
+    .hero-section h1 {
+        font-size:1.5rem;
+    }
+}
+@media (max-width:328px) {
+    .hero-section h1 {
+        font-size:1.5rem;
+    }
+    .hero-section {
         padding-inline:0.5rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
 
     
-nav a {
-    color:white;
-    text-decoration:none;
-}
 
 
-.title-buttons {
-    display:flex;
-    gap:1.5rem;
-}
-nav ul:hover,
-nav button {
-    cursor:pointer;
-}
-
-nav ul li::before {
-    content:"";
-    width: 0px;
-    height:2px;
-    background-color:white;
-    position:absolute;
-    top:75%;
-    transition:0.5s;
-}
-nav ul li:hover::before {
-    width:70px;
-}
-.hero-section-products {
-    background-image: url(../tinified/hero-redo.png);
-} 
-@media (max-width:500px) {
-    .me {
-        font-size:0.75rem !important;
-    }
-}
 
 
 
 /*********/
 
-.hero-section-products h1 {
-    font-size:4rem;
-}
-
-@media (max-width:800px) {
-    .hero-section-products {
-        justify-content: center;
-        padding:0;
-        
-        
-    }
-    .hero-section-products h1 {
-        font-size:max(2.25rem, 4vw);
-    }
-    .hero-section-products .title-container {
-        gap:1rem;
-    }
-    
-    .title-text ~ .title-buttons {
-        gap:0.5rem;
-    }
-}
-@media (max-width:508px) {
-    .hero-section-products h1 {
-        font-size:2rem;
-    }
-    
-}
-.hero-section-products .title-container {
-    overflow:visible;
-    z-index:5;
-    width:max-content;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-.hero-section-products {
-    margin-inline:0;
-}
 
 
 
-.hero-section-products .title-container .title-text p {
-    text-align:center;
-    width:100%;
-    
-    
-}
 
-.hero-section-products .title-text {
-    width:max-content;
-    overflow:visible;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.hero-section-products p {
-    font-size: 1.5rem;
-    width:100%;
-}
-.hero-section-products h1 {
-    width:max-content;
-    
-}
-.hero-section-products .title-buttons {
-    width:max-content;
-}
-@media (max-width:353px) {
-    .title-text h1 {
-        width:100%;
-    }
-    .title-text {
-        width:80% !important;
-    }
-}
-
-@media (max-width:360px) {
-    .title-buttons button {
-       
-    }
-}
 
 /****************************************/
 .product-cards {
