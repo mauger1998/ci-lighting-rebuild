@@ -45,10 +45,10 @@ let today = new Date()
     let open = "Open Now"
     let closed = "Closed Now"
     let display = document.querySelector('.open-closed');
+    console.log(display)
 
   
 
-    var time = today.getHours() + ":" + today.getMinutes()
 
     
 
@@ -75,9 +75,7 @@ const productSection = document.querySelector(".products")
 const heroSection = document.querySelector(".hero-section")
 
 
-heroSeeMoreButton.addEventListener("click", (e) => {
-  whyUsSection.scrollIntoView()
-})
+
 
 cardButtons.forEach(button => {
   button.addEventListener("click", (e) => {

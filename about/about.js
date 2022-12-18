@@ -70,7 +70,7 @@ seeMoreButton.addEventListener("click", (e) => {
 let today = new Date()
     let open = "Open Now"
     let closed = "Closed Now"
-    let display = document.querySelector('.open-closed');
+    let display = document.querySelector('.display');
 
   
 

@@ -147,6 +147,9 @@ nav ul li:nth-child(3):hover::before {
     .burger {
         display:block;
     }
+    .header_top-bar {
+        padding-inline:2rem !important;
+    }
 }
 
 @media (max-width:840px) {
@@ -201,6 +204,7 @@ nav ul li:nth-child(3):hover::before {
     align-items: center;
     color:white;
     margin-top:5rem;
+    max-height:35rem;
     z-index:0;
     max-width:1440px;
 }
@@ -209,22 +213,17 @@ nav ul li:nth-child(3):hover::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:3rem;
-    /* padding-left:2rem; */
-}
-.title-text {
     gap:1rem;
-    
 }
 
+
 .title-container h1 {
-    font-size:4rem;
+    font-size:3rem !important;
     font-weight:700;
     text-align:center;
-    /* padding-inline:0.5rem; */
 }
 .title-container p {
-    font-size:1rem;
+    font-size:1rem !important;
     font-weight:300;
     padding-inline:1rem;
     text-align:center;
@@ -232,14 +231,13 @@ nav ul li:nth-child(3):hover::before {
 }
 .title-container button {
     padding-block:0.4rem;
-    width:10rem;
-    font-size:1.15rem;
+    font-size:1rem;
     background-color:white;
     color:black;
     border:3px solid white;
     transition:0.5s;
     font-weight:500;
-    padding-inline:0;
+    padding-inline:1.5rem;
 }
 .title-container button:nth-child(1) {
     font-weight:700;

@@ -397,7 +397,7 @@ nav ul li:nth-child(3):hover::before {
 }
 
 .title-text ~ .title-buttons > button {
-    font-size:max(1rem);
+    font-size:1rem;
     padding-inline:1rem;
 }
 
@@ -406,6 +406,10 @@ nav ul li:nth-child(3):hover::before {
         width:100%;
         font-size:2rem !important;
     }
+}
+
+.heroSeeMore {
+    padding-inline:1rem !important;
 }
 
 
