@@ -242,7 +242,7 @@ nav ul li:nth-child(3):hover::before {
 *******************/
 
 .hero-section {
-    background-image: url(tinified/hero-darker.png);
+   
     background-repeat:no-repeat;
     background-size:cover;
 }
@@ -251,6 +251,7 @@ nav ul li:nth-child(3):hover::before {
     display:flex;
     align-items: center;
     justify-content: center;
+     background-image: url(tinified/hero-darker.png);
 }
 .hero-section {
     width:100%;
@@ -273,7 +274,7 @@ nav ul li:nth-child(3):hover::before {
     text-align:center;
 }
 .hero-section button {
-    padding:0.5rem 2rem;
+    padding:0.5rem 1rem;
     font-size:1rem;
     font-weight:700;
     margin-top:1.5rem;
@@ -507,7 +508,6 @@ nav ul li:nth-child(3):hover::before {
 }
 /*************************/
 .third-section {
-    background-color:rgb(236, 236, 236);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -521,6 +521,14 @@ nav ul li:nth-child(3):hover::before {
     font-size:2rem;
     max-width:1440px;
     padding-block:6rem;
+}
+.third-section-wrapper {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(236, 236, 236);
+
 }
 .third-section-titles p {
     font-size:1rem;
@@ -696,12 +704,12 @@ nav ul li:nth-child(3):hover::before {
 .photograph {
     height:100%;
     width:100%;
-    max-width:1440px;
     overflow:hidden;
 }
 .photo {
     width:100%;
 }
+
 /************************/
 .store {
     width:100vw;
@@ -828,10 +836,8 @@ nav ul li:nth-child(3):hover::before {
     justify-content:center;
     gap:3rem;
     color:white;  
-    padding-block:8rem;
-    padding:6rem;
+    
     width:100%;
-    max-width:1440px;
 }
 
 .svg {
@@ -841,6 +847,16 @@ nav ul li:nth-child(3):hover::before {
     height:100%;
 
    
+}
+.contact-wrapper {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    max-width:1440px;
+    padding-block:8rem;
+    padding:6rem;
 }
 .rectangle {
     position:absolute;
@@ -921,7 +937,7 @@ fieldset:last-of-type button:hover {
     max-width:75%;
 }
 @media (max-width:718px) {
-    .contact {
+    .contact-wrapper {
         padding-inline:0rem !important;
         width:100% !important;
     }
@@ -949,7 +965,7 @@ fieldset:last-of-type button:hover {
     }
 }
 @media (max-width:521px) {
-   .contact {
+   .contact-wrapper {
     padding-inline:1rem;
    }
 }
