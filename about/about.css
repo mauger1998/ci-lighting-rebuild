@@ -222,16 +222,15 @@ a {
 
 /*****************************/
 
-.hero-section {
-    background-image: url(../tinified/hager-hero-for-site.png);
-    background-repeat:no-repeat;
-    background-size:cover;
-}
+
 .first-section {
     width:100%;
     display:flex;
     align-items: center;
     justify-content: center;
+    background-image: url(../tinified/hager-hero-for-site.png);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 .hero-section {
     width:100%;
@@ -292,19 +291,14 @@ a {
         padding-inline:1rem;
         font-size:0.9rem;
     }
-    .hero-section h1 {
-        font-size:2rem;
-
-    }
+  
     .hero-section p {
         font-size:0.9rem;
         margin-top:0.5rem;
     }
 }
 @media (max-width:525px) {
-    .hero-section h1 {
-        font-size: 1.75rem;
-    }
+    
     .hero-section {
         padding-inline:2rem;
     }
@@ -321,15 +315,9 @@ a {
         font-size:0.8rem;
     }
 }
-@media (max-width:382px) {
-    .hero-section h1 {
-        font-size:1.5rem;
-    }
-}
+
 @media (max-width:328px) {
-    .hero-section h1 {
-        font-size:1.5rem;
-    }
+  
     .hero-section {
         padding-inline:0.5rem;
     }

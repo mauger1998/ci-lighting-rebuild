@@ -322,9 +322,7 @@ nav ul li:nth-child(3):hover::before {
     }
 }
 @media (max-width:525px) {
-    .hero-section h1 {
-        font-size: 1.75rem;
-    }
+    
     .hero-section {
         padding-inline:2rem;
     }
@@ -341,15 +339,9 @@ nav ul li:nth-child(3):hover::before {
         font-size:0.8rem;
     }
 }
-@media (max-width:382px) {
-    .hero-section h1 {
-        font-size:1.5rem;
-    }
-}
+
 @media (max-width:328px) {
-    .hero-section h1 {
-        font-size:1.5rem;
-    }
+    
     .hero-section {
         padding-inline:0.5rem;
     }
