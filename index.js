@@ -41,7 +41,6 @@ let today = new Date()
 let open = 'Open Now'
 let closed = 'Closed Now'
 let display = document.querySelector('.open-closed')
-console.log(display)
 
 let day = today.getDay()
 let hours = today.getHours()
@@ -51,7 +50,7 @@ if (day === 0 || day === 6) {
     // Check if it's Saturday or Sunday
     display.textContent = closed
 } else {
-    if ((hours > 7 || (hours === 7 && minutes >= 30)) && hours < 17) {
+    if ((hours > 7 || (hours === 7 && minutes >= 30)) && hours < 16) {
         display.textContent = open
     } else {
         display.textContent = closed

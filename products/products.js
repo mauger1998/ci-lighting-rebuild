@@ -123,7 +123,6 @@ let today = new Date()
 let open = 'Open Now'
 let closed = 'Closed Now'
 let display = document.querySelector('.display')
-console.log(display)
 
 var time = today.getHours() + ':' + today.getMinutes()
 
@@ -138,7 +137,7 @@ if (today.getDay() == 6) {
 } else {
     if (
         today.getHours() >= 8 &&
-        today.getHours() <= 17 &&
+        today.getHours() <= 16 &&
         today.getDay() !== 0
     ) {
         display.textContent = open
