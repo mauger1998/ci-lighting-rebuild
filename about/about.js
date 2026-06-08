@@ -64,28 +64,22 @@ homeObserver.observe(heroSection)
 
 
 let today = new Date()
-    let open = "Open Now"
-    let closed = "Closed Now"
-    let display = document.querySelector('.display');
+let open = "Open Now"
+let closed = "Closed Now"
+let display = document.querySelector('.open-closed')
 
-  
+let day = today.getDay()
+let hours = today.getHours()
+let minutes = today.getMinutes()
 
-    var time = today.getHours() + ":" + today.getMinutes()
-
-    
-
-    
-
-if (today.getDay() == 6) {
-  if (today.getHours() >= 9 && today.getHours() <= 12 && today.getDay() != 0) {
-    display.textContent = open
-  } 
-} else {
-  if (today.getHours() >= 8 && today.getHours() <= 17 && today.getDay() !== 0) {
-    display.textContent = open
-} else  {
+if (day === 0 || day === 6) {
     display.textContent = closed
-}
+} else {
+    if ((hours > 7 || (hours === 7 && minutes >= 30)) && hours < 16) {
+        display.textContent = open
+    } else {
+        display.textContent = closed
+    }
 }
 
 
